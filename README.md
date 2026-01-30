@@ -50,8 +50,6 @@ Each classifier was trained on three different versions of the dataset: the orig
 
 The models were evaluated based on the following metrics:
 
-- **Accuracy**: Proportion of correctly predicted transactions.
-HEAD
 - **F1 Score**: The harmonic mean of precision and recall.
 - **Recall**: The proportion of actual fraudulent transactions correctly identified.
 - **Precision**: The proportion of true positive fraud predictions out of all positive predictions.
@@ -65,5 +63,4 @@ Each model was trained and tested on the original, downsampled, and oversampled 
 
 ## Conclusion
 
- HEAD
 This project underscores that accuracy is a deceptive metric in the context of fraud detection, where the "needle in the haystack" is what truly matters. By transitioning from a skewed dataset to a balanced one using SMOTE and downsampling, we shifted the model’s focus from simple pattern recognition of normal behavior to the surgical identification of fraudulent anomalies. This recalibration successfully bridged the gap between high theoretical scores and actual operational utility, significantly boosting precision and recall. Ultimately, the results prove that a robust fraud detection system must prioritize class-specific sensitivity over aggregate accuracy to minimize the financial and reputational costs of undetected scams.
